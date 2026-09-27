@@ -32,6 +32,27 @@ npm run build:demo   # builds the GitHub Pages demo into _site/
 - **Escape anything from Canvas, MyU or a model** before it goes into the page (`esc()` in
   `dashboard.js`).
 
+## Commit messages
+
+We use [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): summary`, in the
+imperative mood, under 72 characters.
+
+| Type | Use it for |
+|---|---|
+| `feat` | Something a user can see or do (`feat(tour): explain on-device reading`) |
+| `fix` | A bug fix (`fix(myu): skip meetings on university holidays`) |
+| `refactor` | A code change that doesn't change behaviour |
+| `perf` | A faster or lighter version of the same behaviour |
+| `test` | Adding or fixing tests only |
+| `docs` | README, CONTRIBUTING, comments |
+| `style` | Formatting only |
+| `build` / `ci` | Dependencies, the demo build, GitHub Actions |
+| `chore` | Anything else that doesn't touch the extension's behaviour |
+
+Useful scopes: `canvas`, `myu`, `sources`, `extract`, `ai`, `dashboard`, `tour`, `demo`, `ics`.
+Mark breaking changes with `!` (`feat(ai)!: …`) and explain them in the body.
+
 ## Pull requests
 
-Keep PRs focused, describe what you tested, and make sure `npm test` passes.
+Keep PRs focused, describe what you tested, and make sure `npm test` passes. The PR title follows
+the same Conventional Commits format, because it becomes the squash-merge commit message.
