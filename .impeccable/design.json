@@ -1,0 +1,915 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T18:58:03.622Z",
+  "title": "Design System: Gopher Calendar",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Lavender Canvas",
+        "canonical": "oklch(95.3% 0.026 297.9)",
+        "tonalRamp": [
+          "oklch(15% 0.021 297.9)",
+          "oklch(26% 0.023 297.9)",
+          "oklch(37% 0.026 297.9)",
+          "oklch(48% 0.026 297.9)",
+          "oklch(59% 0.026 297.9)",
+          "oklch(70% 0.026 297.9)",
+          "oklch(82% 0.026 297.9)",
+          "oklch(95% 0.023 297.9)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(59% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(82% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "panel-2": {
+        "role": "neutral",
+        "displayName": "Whisper Lilac",
+        "canonical": "oklch(98.5% 0.008 301.4)",
+        "tonalRamp": [
+          "oklch(15% 0.010 301.4)",
+          "oklch(26% 0.011 301.4)",
+          "oklch(37% 0.012 301.4)",
+          "oklch(48% 0.012 301.4)",
+          "oklch(59% 0.012 301.4)",
+          "oklch(70% 0.012 301.4)",
+          "oklch(82% 0.012 301.4)",
+          "oklch(95% 0.011 301.4)"
+        ]
+      },
+      "header-row": {
+        "role": "neutral",
+        "displayName": "Header Row Tint",
+        "canonical": "oklch(99.0% 0.004 301.4)",
+        "tonalRamp": [
+          "oklch(15% 0.010 301.4)",
+          "oklch(26% 0.011 301.4)",
+          "oklch(37% 0.012 301.4)",
+          "oklch(48% 0.012 301.4)",
+          "oklch(59% 0.012 301.4)",
+          "oklch(70% 0.012 301.4)",
+          "oklch(82% 0.012 301.4)",
+          "oklch(95% 0.011 301.4)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Plum Ink",
+        "canonical": "oklch(24.6% 0.049 298.7)",
+        "tonalRamp": [
+          "oklch(15% 0.039 298.7)",
+          "oklch(26% 0.044 298.7)",
+          "oklch(37% 0.049 298.7)",
+          "oklch(48% 0.049 298.7)",
+          "oklch(59% 0.049 298.7)",
+          "oklch(70% 0.049 298.7)",
+          "oklch(82% 0.049 298.7)",
+          "oklch(95% 0.044 298.7)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Dusk Ink",
+        "canonical": "oklch(39.2% 0.053 300.3)",
+        "tonalRamp": [
+          "oklch(15% 0.042 300.3)",
+          "oklch(26% 0.048 300.3)",
+          "oklch(37% 0.053 300.3)",
+          "oklch(48% 0.053 300.3)",
+          "oklch(59% 0.053 300.3)",
+          "oklch(70% 0.053 300.3)",
+          "oklch(82% 0.053 300.3)",
+          "oklch(95% 0.047 300.3)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Mauve",
+        "canonical": "oklch(51.7% 0.048 300.0)",
+        "tonalRamp": [
+          "oklch(15% 0.038 300.0)",
+          "oklch(26% 0.043 300.0)",
+          "oklch(37% 0.048 300.0)",
+          "oklch(48% 0.048 300.0)",
+          "oklch(59% 0.048 300.0)",
+          "oklch(70% 0.048 300.0)",
+          "oklch(82% 0.048 300.0)",
+          "oklch(95% 0.043 300.0)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(92.0% 0.024 304.5)",
+        "tonalRamp": [
+          "oklch(15% 0.019 304.5)",
+          "oklch(26% 0.021 304.5)",
+          "oklch(37% 0.024 304.5)",
+          "oklch(48% 0.024 304.5)",
+          "oklch(59% 0.024 304.5)",
+          "oklch(70% 0.024 304.5)",
+          "oklch(82% 0.024 304.5)",
+          "oklch(95% 0.021 304.5)"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Control Edge",
+        "canonical": "oklch(86.6% 0.046 303.9)",
+        "tonalRamp": [
+          "oklch(15% 0.036 303.9)",
+          "oklch(26% 0.041 303.9)",
+          "oklch(37% 0.045 303.9)",
+          "oklch(48% 0.046 303.9)",
+          "oklch(59% 0.046 303.9)",
+          "oklch(70% 0.046 303.9)",
+          "oklch(82% 0.046 303.9)",
+          "oklch(95% 0.041 303.9)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Semester Violet",
+        "canonical": "oklch(49.5% 0.191 294.8)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "accent-deep": {
+        "role": "primary",
+        "displayName": "Deep Violet Ink",
+        "canonical": "oklch(39.6% 0.158 294.2)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "accent-wash": {
+        "role": "primary",
+        "displayName": "Violet Wash",
+        "canonical": "oklch(95.9% 0.023 302.0)",
+        "tonalRamp": [
+          "oklch(15% 0.019 302.0)",
+          "oklch(26% 0.021 302.0)",
+          "oklch(37% 0.023 302.0)",
+          "oklch(48% 0.023 302.0)",
+          "oklch(59% 0.023 302.0)",
+          "oklch(70% 0.023 302.0)",
+          "oklch(82% 0.023 302.0)",
+          "oklch(95% 0.021 302.0)"
+        ]
+      },
+      "hover-wash": {
+        "role": "primary",
+        "displayName": "Hover Wash",
+        "canonical": "oklch(96.6% 0.019 302.2)",
+        "tonalRamp": [
+          "oklch(15% 0.015 302.2)",
+          "oklch(26% 0.017 302.2)",
+          "oklch(37% 0.019 302.2)",
+          "oklch(48% 0.019 302.2)",
+          "oklch(59% 0.019 302.2)",
+          "oklch(70% 0.019 302.2)",
+          "oklch(82% 0.019 302.2)",
+          "oklch(95% 0.017 302.2)"
+        ]
+      },
+      "p0": {
+        "role": "secondary",
+        "displayName": "Lilac Mist (load 0)",
+        "canonical": "oklch(98.3% 0.009 299.2)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "p1": {
+        "role": "secondary",
+        "displayName": "Pale Heather (load 1)",
+        "canonical": "oklch(93.9% 0.028 301.8)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "p2": {
+        "role": "secondary",
+        "displayName": "Soft Wisteria (load 2)",
+        "canonical": "oklch(87.8% 0.056 301.2)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "p3": {
+        "role": "secondary",
+        "displayName": "Lavender Bloom (load 3)",
+        "canonical": "oklch(77.5% 0.103 300.2)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "p4": {
+        "role": "secondary",
+        "displayName": "Full Amethyst (load 4)",
+        "canonical": "oklch(63.4% 0.158 298.6)",
+        "tonalRamp": [
+          "#241b35",
+          "#4f2b91",
+          "#6d3fc0",
+          "#9871dc",
+          "#c0a7ee",
+          "#ddcff7",
+          "#eee7fb",
+          "#faf8ff"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Alarm Garnet",
+        "canonical": "oklch(47.3% 0.165 13.8)",
+        "tonalRamp": [
+          "oklch(15% 0.131 13.8)",
+          "oklch(26% 0.147 13.8)",
+          "oklch(37% 0.164 13.8)",
+          "oklch(48% 0.165 13.8)",
+          "oklch(59% 0.165 13.8)",
+          "oklch(70% 0.165 13.8)",
+          "oklch(82% 0.165 13.8)",
+          "oklch(95% 0.146 13.8)"
+        ]
+      },
+      "danger-wash": {
+        "role": "neutral",
+        "displayName": "Garnet Wash",
+        "canonical": "oklch(95.6% 0.017 3.7)",
+        "tonalRamp": [
+          "oklch(15% 0.013 3.7)",
+          "oklch(26% 0.015 3.7)",
+          "oklch(37% 0.017 3.7)",
+          "oklch(48% 0.017 3.7)",
+          "oklch(59% 0.017 3.7)",
+          "oklch(70% 0.017 3.7)",
+          "oklch(82% 0.017 3.7)",
+          "oklch(95% 0.015 3.7)"
+        ]
+      },
+      "tooltip-ink": {
+        "role": "neutral",
+        "displayName": "Tooltip Plum",
+        "canonical": "oklch(28.2% 0.053 298.8)",
+        "tonalRamp": [
+          "oklch(15% 0.042 298.8)",
+          "oklch(26% 0.048 298.8)",
+          "oklch(37% 0.053 298.8)",
+          "oklch(48% 0.053 298.8)",
+          "oklch(59% 0.053 298.8)",
+          "oklch(70% 0.053 298.8)",
+          "oklch(82% 0.053 298.8)",
+          "oklch(95% 0.047 298.8)"
+        ]
+      },
+      "c0-bg": {
+        "role": "tertiary",
+        "displayName": "Orchid fill",
+        "canonical": "oklch(93.5% 0.029 315.3)",
+        "tonalRamp": [
+          "oklch(15% 0.023 315.3)",
+          "oklch(26% 0.026 315.3)",
+          "oklch(37% 0.029 315.3)",
+          "oklch(48% 0.029 315.3)",
+          "oklch(59% 0.029 315.3)",
+          "oklch(70% 0.029 315.3)",
+          "oklch(82% 0.029 315.3)",
+          "oklch(95% 0.026 315.3)"
+        ]
+      },
+      "c0-ink": {
+        "role": "tertiary",
+        "displayName": "Orchid ink",
+        "canonical": "oklch(39.3% 0.133 312.0)",
+        "tonalRamp": [
+          "oklch(15% 0.106 312.0)",
+          "oklch(26% 0.119 312.0)",
+          "oklch(37% 0.132 312.0)",
+          "oklch(48% 0.133 312.0)",
+          "oklch(59% 0.133 312.0)",
+          "oklch(70% 0.133 312.0)",
+          "oklch(82% 0.133 312.0)",
+          "oklch(95% 0.118 312.0)"
+        ]
+      },
+      "c0-edge": {
+        "role": "tertiary",
+        "displayName": "Orchid edge",
+        "canonical": "oklch(70.5% 0.110 314.0)",
+        "tonalRamp": [
+          "oklch(15% 0.087 314.0)",
+          "oklch(26% 0.098 314.0)",
+          "oklch(37% 0.109 314.0)",
+          "oklch(48% 0.110 314.0)",
+          "oklch(59% 0.110 314.0)",
+          "oklch(70% 0.110 314.0)",
+          "oklch(82% 0.110 314.0)",
+          "oklch(95% 0.097 314.0)"
+        ]
+      },
+      "c1-bg": {
+        "role": "tertiary",
+        "displayName": "Periwinkle fill",
+        "canonical": "oklch(93.2% 0.027 279.1)",
+        "tonalRamp": [
+          "oklch(15% 0.022 279.1)",
+          "oklch(26% 0.024 279.1)",
+          "oklch(37% 0.027 279.1)",
+          "oklch(48% 0.027 279.1)",
+          "oklch(59% 0.027 279.1)",
+          "oklch(70% 0.027 279.1)",
+          "oklch(82% 0.027 279.1)",
+          "oklch(95% 0.024 279.1)"
+        ]
+      },
+      "c1-ink": {
+        "role": "tertiary",
+        "displayName": "Periwinkle ink",
+        "canonical": "oklch(38.9% 0.136 272.2)",
+        "tonalRamp": [
+          "oklch(15% 0.108 272.2)",
+          "oklch(26% 0.121 272.2)",
+          "oklch(37% 0.135 272.2)",
+          "oklch(48% 0.136 272.2)",
+          "oklch(59% 0.136 272.2)",
+          "oklch(70% 0.136 272.2)",
+          "oklch(82% 0.136 272.2)",
+          "oklch(95% 0.120 272.2)"
+        ]
+      },
+      "c1-edge": {
+        "role": "tertiary",
+        "displayName": "Periwinkle edge",
+        "canonical": "oklch(70.0% 0.106 277.2)",
+        "tonalRamp": [
+          "oklch(15% 0.084 277.2)",
+          "oklch(26% 0.095 277.2)",
+          "oklch(37% 0.105 277.2)",
+          "oklch(48% 0.106 277.2)",
+          "oklch(59% 0.106 277.2)",
+          "oklch(70% 0.106 277.2)",
+          "oklch(82% 0.106 277.2)",
+          "oklch(95% 0.094 277.2)"
+        ]
+      },
+      "c2-bg": {
+        "role": "tertiary",
+        "displayName": "Sea Glass fill",
+        "canonical": "oklch(93.7% 0.020 185.5)",
+        "tonalRamp": [
+          "oklch(15% 0.016 185.5)",
+          "oklch(26% 0.018 185.5)",
+          "oklch(37% 0.020 185.5)",
+          "oklch(48% 0.020 185.5)",
+          "oklch(59% 0.020 185.5)",
+          "oklch(70% 0.020 185.5)",
+          "oklch(82% 0.020 185.5)",
+          "oklch(95% 0.018 185.5)"
+        ]
+      },
+      "c2-ink": {
+        "role": "tertiary",
+        "displayName": "Sea Glass ink",
+        "canonical": "oklch(43.9% 0.066 185.0)",
+        "tonalRamp": [
+          "oklch(15% 0.052 185.0)",
+          "oklch(26% 0.059 185.0)",
+          "oklch(37% 0.065 185.0)",
+          "oklch(48% 0.066 185.0)",
+          "oklch(59% 0.066 185.0)",
+          "oklch(70% 0.066 185.0)",
+          "oklch(82% 0.066 185.0)",
+          "oklch(95% 0.058 185.0)"
+        ]
+      },
+      "c2-edge": {
+        "role": "tertiary",
+        "displayName": "Sea Glass edge",
+        "canonical": "oklch(75.1% 0.065 183.2)",
+        "tonalRamp": [
+          "oklch(15% 0.051 183.2)",
+          "oklch(26% 0.058 183.2)",
+          "oklch(37% 0.064 183.2)",
+          "oklch(48% 0.065 183.2)",
+          "oklch(59% 0.065 183.2)",
+          "oklch(70% 0.065 183.2)",
+          "oklch(82% 0.065 183.2)",
+          "oklch(95% 0.057 183.2)"
+        ]
+      },
+      "c3-bg": {
+        "role": "tertiary",
+        "displayName": "Wheat fill",
+        "canonical": "oklch(94.6% 0.034 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.027 84.6)",
+          "oklch(26% 0.031 84.6)",
+          "oklch(37% 0.034 84.6)",
+          "oklch(48% 0.034 84.6)",
+          "oklch(59% 0.034 84.6)",
+          "oklch(70% 0.034 84.6)",
+          "oklch(82% 0.034 84.6)",
+          "oklch(95% 0.030 84.6)"
+        ]
+      },
+      "c3-ink": {
+        "role": "tertiary",
+        "displayName": "Wheat ink",
+        "canonical": "oklch(43.9% 0.092 65.5)",
+        "tonalRamp": [
+          "oklch(15% 0.073 65.5)",
+          "oklch(26% 0.082 65.5)",
+          "oklch(37% 0.091 65.5)",
+          "oklch(48% 0.092 65.5)",
+          "oklch(59% 0.092 65.5)",
+          "oklch(70% 0.092 65.5)",
+          "oklch(82% 0.092 65.5)",
+          "oklch(95% 0.081 65.5)"
+        ]
+      },
+      "c3-edge": {
+        "role": "tertiary",
+        "displayName": "Wheat edge",
+        "canonical": "oklch(77.4% 0.106 80.1)",
+        "tonalRamp": [
+          "oklch(15% 0.084 80.1)",
+          "oklch(26% 0.095 80.1)",
+          "oklch(37% 0.105 80.1)",
+          "oklch(48% 0.106 80.1)",
+          "oklch(59% 0.106 80.1)",
+          "oklch(70% 0.106 80.1)",
+          "oklch(82% 0.106 80.1)",
+          "oklch(95% 0.094 80.1)"
+        ]
+      },
+      "c4-bg": {
+        "role": "tertiary",
+        "displayName": "Rose Quartz fill",
+        "canonical": "oklch(93.3% 0.026 2.8)",
+        "tonalRamp": [
+          "oklch(15% 0.021 2.8)",
+          "oklch(26% 0.023 2.8)",
+          "oklch(37% 0.026 2.8)",
+          "oklch(48% 0.026 2.8)",
+          "oklch(59% 0.026 2.8)",
+          "oklch(70% 0.026 2.8)",
+          "oklch(82% 0.026 2.8)",
+          "oklch(95% 0.023 2.8)"
+        ]
+      },
+      "c4-ink": {
+        "role": "tertiary",
+        "displayName": "Rose Quartz ink",
+        "canonical": "oklch(43.2% 0.136 9.2)",
+        "tonalRamp": [
+          "oklch(15% 0.108 9.2)",
+          "oklch(26% 0.122 9.2)",
+          "oklch(37% 0.135 9.2)",
+          "oklch(48% 0.136 9.2)",
+          "oklch(59% 0.136 9.2)",
+          "oklch(70% 0.136 9.2)",
+          "oklch(82% 0.136 9.2)",
+          "oklch(95% 0.121 9.2)"
+        ]
+      },
+      "c4-edge": {
+        "role": "tertiary",
+        "displayName": "Rose Quartz edge",
+        "canonical": "oklch(73.3% 0.100 4.4)",
+        "tonalRamp": [
+          "oklch(15% 0.079 4.4)",
+          "oklch(26% 0.089 4.4)",
+          "oklch(37% 0.099 4.4)",
+          "oklch(48% 0.100 4.4)",
+          "oklch(59% 0.100 4.4)",
+          "oklch(70% 0.100 4.4)",
+          "oklch(82% 0.100 4.4)",
+          "oklch(95% 0.088 4.4)"
+        ]
+      },
+      "c5-bg": {
+        "role": "tertiary",
+        "displayName": "Sage fill",
+        "canonical": "oklch(94.0% 0.028 117.8)",
+        "tonalRamp": [
+          "oklch(15% 0.022 117.8)",
+          "oklch(26% 0.025 117.8)",
+          "oklch(37% 0.028 117.8)",
+          "oklch(48% 0.028 117.8)",
+          "oklch(59% 0.028 117.8)",
+          "oklch(70% 0.028 117.8)",
+          "oklch(82% 0.028 117.8)",
+          "oklch(95% 0.025 117.8)"
+        ]
+      },
+      "c5-ink": {
+        "role": "tertiary",
+        "displayName": "Sage ink",
+        "canonical": "oklch(42.8% 0.090 123.1)",
+        "tonalRamp": [
+          "oklch(15% 0.072 123.1)",
+          "oklch(26% 0.081 123.1)",
+          "oklch(37% 0.090 123.1)",
+          "oklch(48% 0.090 123.1)",
+          "oklch(59% 0.090 123.1)",
+          "oklch(70% 0.090 123.1)",
+          "oklch(82% 0.090 123.1)",
+          "oklch(95% 0.080 123.1)"
+        ]
+      },
+      "c5-edge": {
+        "role": "tertiary",
+        "displayName": "Sage edge",
+        "canonical": "oklch(75.9% 0.095 119.8)",
+        "tonalRamp": [
+          "oklch(15% 0.076 119.8)",
+          "oklch(26% 0.085 119.8)",
+          "oklch(37% 0.094 119.8)",
+          "oklch(48% 0.095 119.8)",
+          "oklch(59% 0.095 119.8)",
+          "oklch(70% 0.095 119.8)",
+          "oklch(82% 0.095 119.8)",
+          "oklch(95% 0.084 119.8)"
+        ]
+      },
+      "c6-bg": {
+        "role": "tertiary",
+        "displayName": "Slate fill",
+        "canonical": "oklch(93.3% 0.009 258.3)",
+        "tonalRamp": [
+          "oklch(15% 0.010 258.3)",
+          "oklch(26% 0.011 258.3)",
+          "oklch(37% 0.012 258.3)",
+          "oklch(48% 0.012 258.3)",
+          "oklch(59% 0.012 258.3)",
+          "oklch(70% 0.012 258.3)",
+          "oklch(82% 0.012 258.3)",
+          "oklch(95% 0.011 258.3)"
+        ]
+      },
+      "c6-ink": {
+        "role": "tertiary",
+        "displayName": "Slate ink",
+        "canonical": "oklch(36.7% 0.030 254.2)",
+        "tonalRamp": [
+          "oklch(15% 0.024 254.2)",
+          "oklch(26% 0.027 254.2)",
+          "oklch(37% 0.030 254.2)",
+          "oklch(48% 0.030 254.2)",
+          "oklch(59% 0.030 254.2)",
+          "oklch(70% 0.030 254.2)",
+          "oklch(82% 0.030 254.2)",
+          "oklch(95% 0.027 254.2)"
+        ]
+      },
+      "c6-edge": {
+        "role": "tertiary",
+        "displayName": "Slate edge",
+        "canonical": "oklch(72.1% 0.027 255.6)",
+        "tonalRamp": [
+          "oklch(15% 0.021 255.6)",
+          "oklch(26% 0.024 255.6)",
+          "oklch(37% 0.027 255.6)",
+          "oklch(48% 0.027 255.6)",
+          "oklch(59% 0.027 255.6)",
+          "oklch(70% 0.027 255.6)",
+          "oklch(82% 0.027 255.6)",
+          "oklch(95% 0.024 255.6)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Term title, one per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Empty-state heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Week titles in the weekly and class schedule headers."
+      },
+      "course-label": {
+        "displayName": "Course label",
+        "purpose": "Course codes in matrix rows and weekly lanes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base text with tabular numerals."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Subtitle, notices, table cells."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Buttons and switch options."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Setting labels, bold sync-line source names."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Sync line, hints, footers, day-of-week labels (muted)."
+      },
+      "item-title": {
+        "displayName": "Item title",
+        "purpose": "Title line of a weekly item."
+      },
+      "item-time": {
+        "displayName": "Item time",
+        "purpose": "Time line of a weekly item, with its suit."
+      },
+      "suit-mark": {
+        "displayName": "Suit mark",
+        "purpose": "Suit notation inside matrix cells."
+      },
+      "suit-legend": {
+        "displayName": "Suit legend",
+        "purpose": "Suit glyphs in the matrix footer legend."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-lift",
+        "value": "0 22px 60px rgba(70, 45, 110, .12)",
+        "purpose": "The single working panel."
+      },
+      {
+        "name": "popup-lift",
+        "value": "0 10px 30px rgba(70, 45, 110, .12)",
+        "purpose": "The popup card."
+      },
+      {
+        "name": "switch-selected",
+        "value": "0 2px 8px rgba(79, 43, 145, .14)",
+        "purpose": "Selected view option on the switch track."
+      },
+      {
+        "name": "item-rest",
+        "value": "0 3px 8px rgba(80, 50, 120, .06)",
+        "purpose": "Weekly items, to read as clickable."
+      },
+      {
+        "name": "tooltip",
+        "value": "0 12px 30px rgba(34, 22, 52, .28)",
+        "purpose": "Cursor tooltip, the only floating layer."
+      },
+      {
+        "name": "cell-hover-ring",
+        "value": "inset 0 0 0 2px #9871dc",
+        "purpose": "Matrix cell hover."
+      },
+      {
+        "name": "cell-focus-ring",
+        "value": "inset 0 0 0 2px #4f2b91",
+        "purpose": "Matrix cell keyboard focus."
+      },
+      {
+        "name": "focus-outline",
+        "value": "outline: 2px solid #6d3fc0; outline-offset: 2px",
+        "purpose": "Global :focus-visible treatment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "tooltip",
+        "value": "opacity/transform .08s ease, translateY(4px) to 0",
+        "purpose": "Tooltip fade and rise."
+      },
+      {
+        "name": "cell-ring",
+        "value": "box-shadow .12s ease",
+        "purpose": "Matrix cell hover and focus ring."
+      },
+      {
+        "name": "button",
+        "value": "background-color, border-color .15s ease",
+        "purpose": "Button state changes."
+      },
+      {
+        "name": "switch",
+        "value": "background-color, color, box-shadow .18s ease",
+        "purpose": "View switch option changes."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none; animation: none",
+        "purpose": "Applied to everything under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "settings-stack",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one main action per toolbar or empty state (Sync).",
+      "html": "<button class=\"ds-btn ds-btn-primary\" type=\"button\">Sync Canvas and MyU</button>",
+      "css": ".ds-btn { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; border: 1px solid var(--line-2, #d9ccec); background: var(--panel, #fff); color: var(--accent-deep, #4f2b91); border-radius: 10px; padding: 8px 13px; font-weight: 700; font-size: 13px; line-height: 1.2; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; } .ds-btn:focus-visible { outline: 2px solid var(--accent, #6d3fc0); outline-offset: 2px; } .ds-btn-primary { background: var(--accent, #6d3fc0); border-color: var(--accent, #6d3fc0); color: #fff; } .ds-btn-primary:hover { background: var(--accent-deep, #4f2b91); border-color: var(--accent-deep, #4f2b91); } .ds-btn-primary:disabled { opacity: .5; cursor: default; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White-faced tool button for Export, week navigation and settings actions.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Export .ics</button>",
+      "css": ".ds-btn-secondary { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; border: 1px solid var(--line-2, #d9ccec); background: var(--panel, #fff); color: var(--accent-deep, #4f2b91); border-radius: 10px; padding: 8px 13px; font-weight: 700; font-size: 13px; line-height: 1.2; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; } .ds-btn-secondary:hover { background: #f6f1ff; } .ds-btn-secondary:active { background: var(--p1, #eee7fb); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent, #6d3fc0); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Borderless button for low-priority toggles (Settings, This week).",
+      "html": "<button class=\"ds-btn-quiet\" type=\"button\">Settings</button>",
+      "css": ".ds-btn-quiet { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; border: 1px solid transparent; background: transparent; color: var(--accent-deep, #4f2b91); border-radius: 10px; padding: 8px 13px; font-weight: 700; font-size: 13px; line-height: 1.2; cursor: pointer; transition: background-color .15s ease; } .ds-btn-quiet:hover { background: var(--accent-wash, #f4eeff); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--accent, #6d3fc0); outline-offset: 2px; }"
+    },
+    {
+      "name": "View Switch",
+      "kind": "nav",
+      "refersTo": "switch-track",
+      "description": "Segmented tablist that keeps Workload and Class schedule apart.",
+      "html": "<div class=\"ds-switch\" role=\"tablist\" aria-label=\"Calendar view\"><button role=\"tab\" aria-selected=\"true\">Workload</button><button role=\"tab\" aria-selected=\"false\">Class schedule</button></div>",
+      "css": ".ds-switch { display: inline-flex; padding: 4px; gap: 2px; background: var(--p1, #eee7fb); border-radius: 12px; } .ds-switch button { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; border: 0; background: transparent; padding: 8px 16px; border-radius: 9px; cursor: pointer; font-weight: 700; font-size: 13px; color: var(--muted, #6c6280); transition: background-color .18s ease, color .18s ease, box-shadow .18s ease; } .ds-switch button:hover { color: var(--accent-deep, #4f2b91); } .ds-switch button[aria-selected=\"true\"] { background: #fff; color: var(--accent-deep, #4f2b91); box-shadow: 0 2px 8px rgba(79, 43, 145, .14); } .ds-switch button:focus-visible { outline: 2px solid var(--accent, #6d3fc0); outline-offset: 2px; }"
+    },
+    {
+      "name": "Matrix Row",
+      "kind": "custom",
+      "refersTo": "matrix-cell-load0",
+      "description": "Course by week workload row: load ramp fill, suit marks only, current-week and AI-inferred rings.",
+      "html": "<div class=\"ds-matrix\"><div class=\"ds-course\"><i class=\"ds-dot\"></i>CSCI 4041</div><div class=\"ds-cell ds-l0\"></div><div class=\"ds-cell ds-l1\"><span class=\"ds-marks\">♦</span></div><div class=\"ds-cell ds-l2 ds-current\"><span class=\"ds-marks\">♠♦</span></div><div class=\"ds-cell ds-l3 ds-guess\" tabindex=\"0\"><span class=\"ds-marks\">♥♦</span></div><div class=\"ds-cell ds-l4\" tabindex=\"0\"><span class=\"ds-marks\">♣♦</span></div></div>",
+      "css": ".ds-matrix { display: grid; grid-template-columns: 120px repeat(5, 64px); border-top: 1px solid #e8e1f2; } .ds-course { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; height: 58px; display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; letter-spacing: .01em; color: #241b35; border-bottom: 1px solid #e8e1f2; background: #fff; } .ds-dot { width: 8px; height: 8px; border-radius: 3px; background: var(--c1-edge, #8e98e0); } .ds-cell { height: 58px; border-left: 1px solid #e8e1f2; border-bottom: 1px solid #e8e1f2; display: flex; align-items: center; justify-content: center; position: relative; cursor: pointer; outline: none; transition: box-shadow .12s ease; } .ds-cell:hover { z-index: 3; box-shadow: inset 0 0 0 2px var(--p4, #9871dc); } .ds-cell:focus-visible { z-index: 3; box-shadow: inset 0 0 0 2px var(--accent-deep, #4f2b91); } .ds-l0 { background: #faf8ff; } .ds-l1 { background: #eee7fb; } .ds-l2 { background: #ddcff7; } .ds-l3 { background: #c0a7ee; } .ds-l4 { background: #9871dc; } .ds-marks { font-family: Georgia, \"Times New Roman\", serif; color: #4f2b91; font-size: 18px; letter-spacing: 1px; text-shadow: 0 1px 0 rgba(255, 255, 255, .7); } .ds-l4 .ds-marks { color: #fff; text-shadow: none; } .ds-current::after { content: \"\"; position: absolute; inset: 4px; border: 1.5px solid rgba(109, 63, 192, .35); border-radius: 7px; pointer-events: none; } .ds-guess::before { content: \"\"; position: absolute; inset: 7px; border: 1.5px dashed rgba(79, 43, 145, .45); border-radius: 6px; pointer-events: none; }"
+    },
+    {
+      "name": "Weekly Item",
+      "kind": "card",
+      "refersTo": "weekly-item",
+      "description": "A due item in the weekly workload view: stated, AI-inferred (dashed), and done.",
+      "html": "<div class=\"ds-items\"><a class=\"ds-item\" href=\"#\"><div class=\"ds-time\"><span class=\"ds-sym\">♦</span>11:59 PM</div><div class=\"ds-title\">Homework 3</div></a><button class=\"ds-item ds-guess\" type=\"button\"><div class=\"ds-time\"><span class=\"ds-sym\">♥</span>In class</div><div class=\"ds-title\">Project proposal</div></button><a class=\"ds-item ds-done\" href=\"#\"><div class=\"ds-time\"><span class=\"ds-sym\">♠</span>9:00 AM</div><div class=\"ds-title\">Quiz 2</div></a></div>",
+      "css": ".ds-items { display: flex; flex-direction: column; gap: 6px; width: 150px; } .ds-item { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; display: block; width: 100%; text-align: left; border: 1px solid #ded2ef; background: #f4eeff; border-radius: 9px; padding: 7px 8px; line-height: 1.25; box-shadow: 0 3px 8px rgba(80, 50, 120, .06); cursor: pointer; color: inherit; text-decoration: none; } .ds-item:hover { border-color: var(--p3, #c0a7ee); } .ds-item:focus-visible { outline: 2px solid var(--accent, #6d3fc0); outline-offset: 2px; } .ds-time { font-size: 10.5px; color: #6f6090; font-weight: 800; margin-bottom: 3px; } .ds-sym { font-family: Georgia, \"Times New Roman\", serif; font-weight: 400; margin-right: 3px; color: var(--accent, #6d3fc0); } .ds-title { font-size: 11.5px; color: #3e2d58; font-weight: 700; } .ds-item.ds-guess { border: 1.5px dashed var(--p4, #9871dc); background: #fff; } .ds-item.ds-guess .ds-time::after { content: \" · from syllabus\"; font-weight: 600; color: var(--accent, #6d3fc0); } .ds-item.ds-done { background: #fbf9ff; border-color: #e8e1f2; } .ds-item.ds-done .ds-time, .ds-item.ds-done .ds-title { color: #6c6280; } .ds-item.ds-done .ds-title { text-decoration: line-through; }"
+    },
+    {
+      "name": "Meeting Block",
+      "kind": "card",
+      "refersTo": "meeting-block",
+      "description": "A class meeting on the hour grid in the Class schedule, filled with its course tint.",
+      "html": "<div class=\"ds-meetings\"><div class=\"ds-meeting ds-c2\"><div class=\"ds-code\">CSCI 4041</div><div class=\"ds-meta\">10:10 – 11:00 AM</div><div class=\"ds-meta\">Keller 3-210</div></div><div class=\"ds-meeting ds-c4\"><div class=\"ds-code\">WRIT 1301</div><div class=\"ds-meta\">1:25 – 2:15 PM</div><div class=\"ds-meta\">Lind 207</div></div></div>",
+      "css": ".ds-meetings { display: flex; gap: 8px; } .ds-meeting { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; width: 150px; border-radius: 10px; padding: 6px 9px; border: 1px solid transparent; font-size: 11.5px; line-height: 1.3; } .ds-code { font-weight: 800; font-size: 12.5px; } .ds-meta { opacity: .88; } .ds-c2 { background: var(--c2-bg, #dcefec); color: var(--c2-ink, #1d5e57); border-color: var(--c2-edge, #7fbcb2); } .ds-c4 { background: var(--c4-bg, #f9e2e7); color: var(--c4-ink, #8a2540); border-color: var(--c4-edge, #de8ea1); }"
+    },
+    {
+      "name": "AI Strip",
+      "kind": "custom",
+      "refersTo": "ai-strip",
+      "description": "Single-line dashed status band reporting the AI syllabus pass.",
+      "html": "<div class=\"ds-ai-strip\"><b>3 dates read from the CSCI 4041 syllabus</b>, dashed until you confirm them.</div>",
+      "css": ".ds-ai-strip { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; padding: 10px 14px; border-radius: 12px; background: var(--panel-2, #fbf9ff); border: 1px dashed var(--p3, #c0a7ee); font-size: 12.5px; color: var(--ink-2, #4a3f5e); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-ai-strip b { color: var(--accent-deep, #4f2b91); }"
+    },
+    {
+      "name": "Notice",
+      "kind": "custom",
+      "refersTo": "notice",
+      "description": "Full-width status band under the toolbar; error variant in garnet.",
+      "html": "<div><p class=\"ds-notice\">Synced 42 deadlines and 6 classes. <button class=\"ds-notice-btn\" type=\"button\">Undo</button></p><p class=\"ds-notice ds-err\">MyU session expired. Log in to MyU and sync again.</p></div>",
+      "css": ".ds-notice { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; margin: 0; padding: 11px 30px; font-size: 13px; background: var(--accent-wash, #f4eeff); color: var(--accent-deep, #4f2b91); border-bottom: 1px solid var(--line, #e8e1f2); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; } .ds-notice.ds-err { background: var(--danger-wash, #fbecef); color: var(--danger, #a3213f); } .ds-notice-btn { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; border: 1px solid #d9ccec; background: #fff; color: #4f2b91; border-radius: 10px; padding: 5px 10px; font-weight: 700; font-size: 13px; cursor: pointer; } .ds-notice-btn:hover { background: #f6f1ff; } .ds-notice-btn:focus-visible { outline: 2px solid #6d3fc0; outline-offset: 2px; }"
+    },
+    {
+      "name": "Cursor Tooltip",
+      "kind": "custom",
+      "refersTo": "tooltip",
+      "description": "Dark plum hover detail shown beside the cursor for matrix cells, items and meetings.",
+      "html": "<div class=\"ds-tip\"><div class=\"ds-tip-title\">CSCI 4041 · week of Oct 12</div><div class=\"ds-tip-line\"><span class=\"ds-tip-sym\">♣</span> Midterm 1 · Thu 10:10 AM</div><div class=\"ds-tip-line\"><span class=\"ds-tip-sym\">♦</span> Homework 4 · Fri 11:59 PM</div><div class=\"ds-tip-meta\">Click to open this week.</div></div>",
+      "css": ".ds-tip { font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif; max-width: 340px; background: #2d2340; color: #fff; border-radius: 12px; padding: 10px 12px; box-shadow: 0 12px 30px rgba(34, 22, 52, .28); font-size: 12px; line-height: 1.42; } .ds-tip-title { font-weight: 800; margin-bottom: 5px; } .ds-tip-line { color: #ece5f7; } .ds-tip-sym { font-family: Georgia, \"Times New Roman\", serif; } .ds-tip-meta { color: #cdbfe4; margin-top: 6px; font-size: 11px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dealt Semester",
+    "overview": "The whole term is laid out on one table like a dealt hand: every course is a row, every week a column, and the depth of purple says how heavy that week is before a single word is read. Card suits mark what kind of work sits in a week; they are notation, read like a legend, not decoration. Detail is always one gesture away (hover for a tooltip beside the cursor, click to open the week), so the first view stays quiet and whole.\n\nThe world is a lavender canvas holding one white working panel with generous 24px corners and a soft violet-tinted lift. Everything inside the panel is flat, hairline-ruled and dense in the way a timetable is dense: tabular numerals, 12 to 14px text, heavy 800 weights reserved for names and titles. Purple is the only voice in the Workload view; the seven muted course tints appear at full strength only in the Class schedule, and elsewhere shrink to an 8px marker beside a course code.\n\nHonesty is a visual property here. Anything the AI read out of a syllabus, rather than something Canvas or MyU stated, is drawn with a dashed outline until the student confirms it. The system is light-only (`color-scheme: light`) and set in Inter, kept on purpose as the incumbent face of the Awesome Calendar Skill world.",
+    "keyCharacteristics": [
+      "Lavender canvas, one white panel, flat hairline-ruled interior.",
+      "A five-step purple ramp (p0 to p4) encodes workload and nothing else.",
+      "Card suits (♦ ♠ ♣ ♥ ● ▲) set in Georgia as a notation, never as icons.",
+      "Dashed outline equals \"inferred by AI, unconfirmed\".",
+      "Two views, Workload and Class schedule, behind one segmented switch; they never share a canvas.",
+      "Hover detail rides beside the cursor in a dark plum tooltip."
+    ],
+    "rules": [
+      {
+        "name": "The Purple Is Load Rule",
+        "body": "In the Workload view, purple intensity means workload and only workload. A darker cell must always mean more due that week; no other element borrows p2 to p4 as a decorative fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tints Stay Home Rule",
+        "body": "Course tints fill surfaces only in the Class schedule. Everywhere else a course is identified by an 8px tinted marker beside its code, never by a tinted card or row.",
+        "section": "colors"
+      },
+      {
+        "name": "The Suits Are Notation Rule",
+        "body": "♦ assignment, ♠ quiz, ♣ exam, ♥ project or presentation, ● participation, ▲ report or milestone. Suits are typeset characters in the suit face, colored with the accent family, always backed by the legend in the matrix footer. They are never drawn as icons, never boxed in badges, and never decorate buttons, headings or navigation.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Words In Cells Rule",
+        "body": "A matrix cell carries only its load color and its suit marks, ordered exam, quiz, project, milestone, assignment, participation. Titles, counts and dates live in the tooltip and the weekly view.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Panel Rule",
+        "body": "There is exactly one lifted white panel per page. New sections go inside it as flat, hairline-divided bands; they do not become cards with their own shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Dashed Doubt Rule",
+        "body": "A dashed outline means the AI inferred it from a syllabus and the student has not confirmed it. Dashes appear on AI-dated items, on matrix cells holding such an item, and on the AI strip that reports the syllabus pass. Once confirmed, the item drops the dash and becomes an ordinary solid item.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep the page to one white panel (24px corners, panel-lift shadow) on the lavender canvas, and add new content as flat, hairline-divided bands inside it.",
+      "Do encode workload only with the p0 to p4 ramp, and keep the lighter-to-heavier scale in the matrix footer whenever the matrix is shown.",
+      "Do set suits in Georgia with the accent family and keep the suit legend visible beside the matrix.",
+      "Do draw anything the AI inferred with a dashed outline (1.5px dashed p4 on items) and say so in words nearby (\"from syllabus\"), until the student confirms it.",
+      "Do keep Workload and Class schedule behind the one segmented switch; each view shows only its own data.",
+      "Do put detail in the cursor tooltip or one click deeper, and keep headline surfaces free of per-item text.",
+      "Do use tabular numerals and the 12 to 14px Inter scale; reserve 800 weight for names, titles and dates."
+    ],
+    "donts": [
+      "Don't put words, counts or dates inside matrix cells; only load color and suit marks.",
+      "Don't use a dashed line for anything the AI did not infer.",
+      "Don't replace suits with icon-set pictograms, wrap them in badges, or use them to decorate buttons, headings or navigation.",
+      "Don't show class meetings in the Workload view or deadlines in the Class schedule, and don't fill Workload surfaces with course tints beyond the 8px marker.",
+      "Don't use Alarm Garnet to signal heavy workload; it is for errors, missing work and destructive actions only.",
+      "Don't stack extra cards or shadows inside the panel."
+    ]
+  }
+}

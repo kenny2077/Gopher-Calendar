@@ -1,0 +1,9 @@
+# Secrets: API keys live only here, never in committed files
+extension/config.local.json
+.env
+node_modules/
+.DS_Store
+test/fixtures/private/
+.impeccable/review/
+dev/preview.html
+_site/

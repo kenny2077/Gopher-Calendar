@@ -1,0 +1,10 @@
+{
+  "azureEndpoint": "",
+  "azureDeployment": "gpt-6-luna",
+  "azureApiKey": "",
+  "provider": "azure",
+  "openaiModel": "gpt-6-luna",
+  "openaiApiKey": "",
+  "anthropicModel": "claude-sonnet-5",
+  "anthropicApiKey": ""
+}

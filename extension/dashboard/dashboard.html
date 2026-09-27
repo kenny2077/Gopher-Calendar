@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semester calendar</title>
+<link rel="icon" href="../icons/icon-32.png">
+<link rel="stylesheet" href="dashboard.css">
+<script type="module" src="dashboard.js"></script>
+</head>
+<body>
+<div class="shell">
+  <main class="panel" id="app">
+    <header class="topbar">
+      <div class="title-block">
+        <h1 id="termTitle" class="sr-only">Semester calendar</h1>
+        <p class="sync-line" id="syncLine" aria-live="polite"></p>
+      </div>
+      <div class="controls">
+        <div class="switch" role="tablist" aria-label="Calendar view">
+          <button role="tab" id="tabWorkload" aria-selected="true" aria-controls="workloadView">Workload</button>
+          <button role="tab" id="tabClasses" aria-selected="false" aria-controls="classesView" tabindex="-1">Class schedule</button>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="syncBtn" type="button" aria-label="Sync Canvas and MyU">Sync<span class="long"> Canvas and MyU</span></button>
+          <button class="btn quiet" id="settingsBtn" type="button" aria-expanded="false" aria-controls="settings">Settings</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="settings" class="settings" hidden aria-label="Settings">
+      <div class="settings-grid">
+        <div class="setting">
+          <label class="check"><input type="checkbox" id="aiToggle"> Read approved syllabus and schedule files to fill missing dates</label>
+          <fieldset class="modes">
+            <legend class="setting-label">How to read them</legend>
+            <label class="check"><input type="radio" name="readMode" value="rules"> On this device <span class="hint-inline">Rules only. Nothing leaves your browser.</span></label>
+            <label class="check"><input type="radio" name="readMode" value="ai"> With an AI model <span class="hint-inline">Better with unusual wording, repeating events and scanned PDFs. Approved files are sent to the provider you choose.</span></label>
+          </fieldset>
+          <p class="hint">Either way you approve which files are read, and new dates stay dashed until you confirm them.</p>
+        </div>
+        <div class="setting" id="aiFields">
+          <label for="aiProvider">AI provider (your own key)</label>
+          <select id="aiProvider">
+            <option value="anthropic">Anthropic (Claude)</option>
+            <option value="openai">OpenAI</option>
+            <option value="azure">Azure OpenAI</option>
+          </select>
+          <div id="endpointRow">
+            <label for="azureEndpoint" class="field-label">Azure endpoint</label>
+            <input type="text" id="azureEndpoint" autocomplete="off" spellcheck="false" placeholder="https://<resource>.services.ai.azure.com/openai/v1">
+          </div>
+          <label for="aiModel" class="field-label" id="aiModelLabel">Model</label>
+          <input type="text" id="aiModel" autocomplete="off" spellcheck="false">
+          <label for="apiKey" class="field-label">API key</label>
+          <div class="inline">
+            <input type="password" id="apiKey" autocomplete="off" spellcheck="false">
+            <button class="btn" id="saveKey" type="button">Save</button>
+          </div>
+          <p class="hint" id="keyStatus"></p>
+        </div>
+        <div class="setting">
+          <span class="setting-label">Add to your calendar</span>
+          <div class="inline">
+            <button class="btn" id="exportBtn" type="button">Download .ics file</button>
+            <a class="btn quiet" href="https://calendar.google.com/calendar/u/0/r/settings/export" target="_blank" rel="noopener">Open Google Calendar import</a>
+          </div>
+          <p class="hint">One file with your classes and deadlines. Import it in Google Calendar (Settings, then Import) or open it with Apple Calendar or Outlook.</p>
+        </div>
+        <div class="setting">
+          <span class="setting-label">Data</span>
+          <div class="inline">
+            <button class="btn" id="reviewSources" type="button">Review sources</button>
+            <button class="btn" id="showTour" type="button">Show the tour</button>
+            <button class="btn" id="loadSample" type="button">Show sample semester</button>
+            <button class="btn danger" id="clearData" type="button">Clear synced data</button>
+          </div>
+          <p class="hint">Everything is stored in this browser only.</p>
+        </div>
+      </div>
+    </section>
+
+    <p id="notice" class="notice" hidden></p>
+
+    <section id="emptyView" class="empty" hidden>
+      <h2>Build your semester</h2>
+      <p>Sync reads your deadlines from Canvas and your class times from MyU, using the sessions already open in this browser. Log in to both first if you haven't today.</p>
+      <div class="inline">
+        <button class="btn primary" id="emptySync" type="button">Sync Canvas and MyU</button>
+        <button class="btn" id="emptySample" type="button">Show sample semester</button>
+      </div>
+    </section>
+
+    <section id="workloadView" class="view" role="tabpanel" aria-labelledby="tabWorkload">
+      <section id="sources" class="sources" hidden aria-label="Sources to read"></section>
+      <div id="aiStrip" class="ai-strip" hidden aria-live="polite"></div>
+
+      <div id="semesterLayer">
+        <div class="matrix-wrap"><div id="matrix" class="matrix" role="grid" aria-label="Workload by course and week"></div></div>
+        <footer class="matrix-foot">
+          <ul class="legend" aria-label="Item types">
+            <li><b>♦</b>assignment</li><li><b>♠</b>quiz</li><li><b>♣</b>exam</li>
+            <li><b>♥</b>project / presentation</li><li><b>●</b>participation</li><li><b>▲</b>report / milestone</li>
+          </ul>
+          <div class="load-scale" aria-label="Workload scale">
+            <span>lighter</span><i class="swatch load1"></i><i class="swatch load2"></i><i class="swatch load3"></i><i class="swatch load4"></i><span>heavier</span>
+          </div>
+        </footer>
+        <details id="undated" class="undated" hidden>
+          <summary id="undatedSummary"></summary>
+          <ul id="undatedList"></ul>
+        </details>
+      </div>
+
+      <div id="weekLayer" hidden>
+        <div class="week-head">
+          <div class="week-left">
+            <button class="btn" id="backBtn" type="button">← Semester view</button>
+            <div>
+              <h2 class="week-title" id="weekTitle"></h2>
+              <p class="focus-note" id="focusNote"></p>
+            </div>
+          </div>
+          <div class="week-nav">
+            <button class="btn" id="prevWeek" type="button">Previous week ←</button>
+            <button class="btn" id="nextWeek" type="button">Next week →</button>
+          </div>
+        </div>
+        <div class="weekly-wrap"><div id="weeklyGrid" class="weekly-grid"></div></div>
+        <p id="weekEmpty" class="week-empty" hidden>Nothing is due this week.</p>
+      </div>
+    </section>
+
+    <section id="classesView" class="view" role="tabpanel" aria-labelledby="tabClasses" hidden>
+      <div class="week-head">
+        <div class="week-left">
+          <div>
+            <h2 class="week-title" id="schedTitle"></h2>
+            <p class="focus-note" id="schedNote"></p>
+          </div>
+        </div>
+        <div class="week-nav">
+          <button class="btn quiet" id="schedToday" type="button">This week</button>
+          <button class="btn" id="schedPrev" type="button">Previous week ←</button>
+          <button class="btn" id="schedNext" type="button">Next week →</button>
+        </div>
+      </div>
+      <div class="sched-wrap"><div id="schedGrid" class="sched-grid"></div></div>
+      <ul id="schedChanges" class="sched-changes" hidden></ul>
+    </section>
+  </main>
+</div>
+<div id="tooltip" class="tooltip" role="tooltip"></div>
+</body>
+</html>
