@@ -998,6 +998,11 @@ function runTour() {
       body: 'The calendar suggests each course’s syllabus and schedule files from their names. Nothing is opened until you click <b>Read</b>, and it is read on this device. Dates it finds show dashed until you confirm them. You can review sources again from Settings.',
     },
     {
+      target: () => $('settingsBtn'),
+      title: 'Nothing leaves your computer',
+      body: 'By default, approved files are read on this device with built-in rules and no AI. If a syllabus is written unusually, you can add your own Anthropic, OpenAI or Azure key in <b>Settings</b>. The instructions for the AI are already set up, so you only paste the key.',
+    },
+    {
       target: () => $('syncBtn'),
       title: 'Keep it current',
       body: 'Sync again any time to pull new deadlines and class changes. To add everything to Google Calendar or Apple Calendar, open <b>Settings</b>.',

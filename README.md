@@ -65,7 +65,7 @@ page with a sample semester. The buttons there are for show.
 | Explore | Click any week in the grid | That week's items, with the course you clicked listed first. |
 | Export | **Settings → Download .ics file** | One file with every class meeting and deadline. |
 
-A three-step tour opens the first time the calendar has data. **Settings → Show the tour** replays it.
+A four-step tour opens the first time the calendar has data. **Settings → Show the tour** replays it.
 
 <table>
 <tr>
