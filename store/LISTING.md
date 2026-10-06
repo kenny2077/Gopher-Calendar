@@ -14,25 +14,21 @@ to the matching [GitHub release](https://github.com/kenny2077/Gopher-Calendar/re
 
 **Category:** Education · **Language:** English (United States)
 
-**Description:**
+**Description** (paste as is; each paragraph is one line so the store doesn't break lines mid-sentence):
 
 ```text
 Your whole semester on one page, built for University of Minnesota students.
 
-MyU tells you where to be. Canvas tells you what's due. Gopher Calendar puts both in one calendar,
-using the Canvas and MyU sessions already open in your browser. No account, no password, no server.
+MyU tells you where to be. Canvas tells you what's due. Gopher Calendar puts both in one calendar, using the Canvas and MyU sessions already open in your browser. No account, no password, no server.
 
 WORKLOAD VIEW
-See which weeks will crush you. Every course against every week, shaded by how much is due, with
-card-suit marks for the kind of work: ♣ exam, ♠ quiz, ♦ assignment, ♥ project.
+See which weeks will crush you. Every course against every week, shaded by how much is due, with card-suit marks for the kind of work: ♣ exam, ♠ quiz, ♦ assignment, ♥ project.
 
 CLASS SCHEDULE
 Your MyU classes on a week grid that fits one screen, with university holidays already removed.
 
 DATES CANVAS IS MISSING
-Many professors put due dates only in a syllabus PDF or on the course Home page. Gopher Calendar
-finds those files and reads them, only after you approve them. New dates show dashed until you
-confirm them. Repeating events like "a short quiz at the start of each lab" become Quiz 1, 2, 3…
+Many professors put due dates only in a syllabus PDF or on the course Home page. Gopher Calendar finds those files and reads them, only after you approve them. New dates show dashed until you confirm them. Repeating events like "a short quiz at the start of each lab" become Quiz 1, 2, 3…
 
 TAKE IT ANYWHERE
 Export an .ics file for Google Calendar, Apple Calendar or Outlook.
@@ -40,8 +36,7 @@ Export an .ics file for Google Calendar, Apple Calendar or Outlook.
 PRIVATE BY DESIGN
 • Read-only: it never changes anything in Canvas or MyU.
 • Everything stays in your browser. There is no Gopher Calendar server.
-• Syllabi are read by rules on your device. AI reading is optional and off by default; if you turn
-  it on, you bring your own Anthropic, OpenAI or Azure OpenAI key.
+• Syllabi are read by rules on your device. AI reading is optional and off by default; if you turn it on, you bring your own Anthropic, OpenAI or Azure OpenAI key.
 
 Open source (MIT): https://github.com/kenny2077/Gopher-Calendar
 Not affiliated with or endorsed by the University of Minnesota.
@@ -59,6 +54,19 @@ Screenshots come from the live demo's sample semester. They contain no real stud
 
 **Official URL / homepage:** https://github.com/kenny2077/Gopher-Calendar
 **Support URL:** https://github.com/kenny2077/Gopher-Calendar/issues
+
+## Test instructions
+
+Reviewers can't sign in to UMN Canvas or MyU, so point them at the built-in sample semester:
+
+```text
+Gopher Calendar reads a University of Minnesota student's Canvas and MyU, which need a UMN login. To review without one:
+1. Click the toolbar icon, then "Open calendar".
+2. Click "Show sample semester". This loads a made-up semester stored only in the browser.
+3. Browse the Workload view, click any week to see its items, and open the Class schedule tab.
+4. Settings has the reading mode (on-device by default), the optional AI key fields, .ics export and "Clear synced data".
+A public demo of the same page is at https://kenny2077.github.io/Gopher-Calendar/
+```
 
 ## Privacy practices
 
