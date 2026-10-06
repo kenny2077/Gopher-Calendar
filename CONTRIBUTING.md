@@ -21,6 +21,15 @@ npm run preview      # http://localhost:5178/dev/preview.html, sample semester, 
 npm run build:demo   # builds the GitHub Pages demo into _site/
 ```
 
+## Releasing
+
+1. Bump `version` in both `package.json` and `extension/manifest.json` (`npm run package` refuses
+   to build if they differ).
+2. Add a `## [X.Y.Z] - YYYY-MM-DD` section to `CHANGELOG.md`. It becomes the release notes.
+3. Run `npm run package`, unzip the result, and load it with **Load unpacked** once to smoke-test it.
+4. Push a `vX.Y.Z` tag. The Release workflow tests, packages, and publishes the GitHub release with
+   the zip attached. Upload the same zip to the Chrome Web Store using [`store/LISTING.md`](store/LISTING.md).
+
 ## Ground rules
 
 - **Read-only.** Collectors must only send `GET` requests, one at a time, with a pause between
