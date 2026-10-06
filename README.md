@@ -2,7 +2,7 @@
   <a href="https://kenny2077.github.io/Gopher-Calendar/"><img src="docs/assets/workload.png" width="100%" alt="Gopher Calendar workload view: six courses down the side, sixteen weeks across, purple shading and card-suit marks for how much of each kind of work is due each week"></a>
 </p>
 
-# Gopher Calendar ♦
+<h1 align="center">♣ Gopher Calendar ♠</h1>
 
 <p align="center">
   <a href="https://kenny2077.github.io/Gopher-Calendar/"><b>Live demo</b></a> ·
