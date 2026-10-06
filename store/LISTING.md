@@ -87,6 +87,15 @@ A public demo of the same page is at https://kenny2077.github.io/Gopher-Calendar
 | Host: `*.instructure.com`, `*.inscloudgate.net`, `*.canvas-user-content.com` | Where Canvas serves course files; used only to download syllabus files the student approved. |
 | Optional host: Anthropic, OpenAI, Azure OpenAI | Requested only if the student turns on AI reading and saves their own API key. |
 
+**Host permission justification** (the dashboard has one box for all hosts; paste this plain text):
+
+```text
+canvas.umn.edu and www.myu.umn.edu: the two sites the calendar is built from. Only read-only GET requests are sent, using the student's existing session.
+academic-calendar.umn.edu: the public UMN holiday list, so classes on university holidays are hidden.
+*.instructure.com, *.inscloudgate.net and *.canvas-user-content.com: where Canvas serves course files. Used only to download syllabus files the student has approved.
+Anthropic, OpenAI and Azure OpenAI hosts are optional permissions, requested only if the student turns on AI reading and saves their own API key.
+```
+
 **Remote code:** No. All code, including pdf.js, ships inside the package.
 
 **Data usage** (check these boxes in the dashboard):
