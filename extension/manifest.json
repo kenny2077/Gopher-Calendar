@@ -3,6 +3,7 @@
   "name": "Gopher Calendar",
   "version": "0.1.0",
   "description": "Canvas deadlines and MyU class times in one semester calendar for UMN students. Your data stays in your browser.",
+  "homepage_url": "https://github.com/kenny2077/Gopher-Calendar",
   "background": {
     "service_worker": "background.js",
     "type": "module"

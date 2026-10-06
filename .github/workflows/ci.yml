@@ -19,7 +19,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - name: Manifest is valid JSON with no dev bridge
-        run: node -e "const m=require('./extension/manifest.json'); if (m.externally_connectable) throw new Error('externally_connectable must not ship')"
       - name: No local config committed
         run: test ! -f extension/config.local.json
+      - name: Package builds (manifest checks, no dev bridge, no secrets)
+        run: npm run package

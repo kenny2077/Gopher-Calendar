@@ -7,3 +7,4 @@ test/fixtures/private/
 .impeccable/review/
 dev/preview.html
 _site/
+dist/
