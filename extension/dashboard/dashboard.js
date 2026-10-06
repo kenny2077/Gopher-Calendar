@@ -85,9 +85,9 @@ function bindTip(el, html) {
 /* ---------- header ---------- */
 
 function renderHeader() {
-  const title = model ? model.termName : 'Semester calendar';
+  const title = model ? model.termName : 'Gopher Calendar';
   $('termTitle').textContent = title;
-  document.title = IS_DEMO ? 'Gopher Calendar · live demo' : model ? `${title} · calendar` : 'Semester calendar';
+  document.title = IS_DEMO ? 'Gopher Calendar · live demo' : model ? `${title} · Gopher Calendar` : 'Gopher Calendar';
 
   const s = store.syncState || {};
   const line = ['canvas', 'myu'].map(k => {

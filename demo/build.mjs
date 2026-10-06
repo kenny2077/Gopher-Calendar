@@ -16,7 +16,7 @@ cpSync(new URL('demo/demo-shim.js', root), new URL('demo-shim.js', out));
 cpSync(new URL('demo/seed.js', root), new URL('lib/demo-seed.js', out));
 
 const page = readFileSync(new URL('extension/dashboard/dashboard.html', root), 'utf8')
-  .replace('<title>Semester calendar</title>', '<title>Gopher Calendar · live demo</title>\n<meta name="description" content="Canvas deadlines and MyU classes in one semester calendar. A live demo with a sample semester.">')
+  .replace('<title>Gopher Calendar</title>', '<title>Gopher Calendar · live demo</title>\n<meta name="description" content="Canvas deadlines and MyU classes in one semester calendar. A live demo with a sample semester.">')
   .replace('href="../icons/icon-32.png"', 'href="icons/icon-32.png"')
   .replace('href="dashboard.css"', 'href="dashboard/dashboard.css"')
   .replace('<script type="module" src="dashboard.js"></script>',
