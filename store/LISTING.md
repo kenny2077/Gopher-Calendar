@@ -57,15 +57,16 @@ Screenshots come from the live demo's sample semester. They contain no real stud
 
 ## Test instructions
 
-Reviewers can't sign in to UMN Canvas or MyU, so point them at the built-in sample semester:
+Reviewers can't sign in to UMN Canvas or MyU, so point them at the built-in sample semester
+(the box allows 500 characters; leave Username and Password empty):
 
 ```text
-Gopher Calendar reads a University of Minnesota student's Canvas and MyU, which need a UMN login. To review without one:
+Canvas and MyU need a UMN login, so use the built-in sample instead:
 1. Click the toolbar icon, then "Open calendar".
-2. Click "Show sample semester". This loads a made-up semester stored only in the browser.
-3. Browse the Workload view, click any week to see its items, and open the Class schedule tab.
-4. Settings has the reading mode (on-device by default), the optional AI key fields, .ics export and "Clear synced data".
-A public demo of the same page is at https://kenny2077.github.io/Gopher-Calendar/
+2. Click "Show sample semester" (made-up data, stored only in the browser).
+3. Browse Workload, click any week, then open the Class schedule tab.
+4. Settings: reading mode (on-device by default), optional AI key, .ics export.
+Same page as a public demo: https://kenny2077.github.io/Gopher-Calendar/
 ```
 
 ## Privacy practices
